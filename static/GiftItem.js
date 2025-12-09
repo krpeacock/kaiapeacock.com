@@ -28,6 +28,21 @@ class GiftItem extends HTMLElement {
                 margin: 0;
                 margin-bottom: 1rem;
             }
+            .price-container {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+            .original-price {
+                text-decoration: line-through;
+                color: #666;
+                font-size: 0.9em;
+            }
+            .current-price {
+                font-weight: bold;
+                color: #d32f2f;
+            }
             #picture-link {
                 text-decoration: none;
                 border-ottom: none;
@@ -71,6 +86,7 @@ class GiftItem extends HTMLElement {
         </a>
         <h3 id="title"></h3>
         <p id="description"></p>
+        <div id="price-container" class="price-container" style="display: none;"></div>
         <a href="" id="link"></a>
         `;
   }
@@ -83,15 +99,41 @@ class GiftItem extends HTMLElement {
     this.shadowRoot.querySelector("h3").textContent =
       this.getAttribute("title");
 
-    const formattedPrice = Intl.NumberFormat("en-US", {
+    const priceContainer = this.shadowRoot.querySelector("#price-container");
+    const originalPrice = this.getAttribute("originalPrice");
+    const currentPrice = this.getAttribute("price");
+
+    // Format prices
+    const priceFormatter = Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
       maximumFractionDigits: 0,
-    }).format(this.getAttribute("price"));
+    });
 
-    const description = `${this.getAttribute("description")}${
-      this.getAttribute("price") ? ` - ${formattedPrice}` : ""
-    }`;
+    // Build description
+    let description = this.getAttribute("description");
+    
+    // Handle pricing display
+    if (currentPrice) {
+      const formattedCurrent = priceFormatter.format(currentPrice);
+      
+      if (originalPrice && parseFloat(originalPrice) > parseFloat(currentPrice)) {
+        // Show discount pricing with strikethrough in price container
+        const formattedOriginal = priceFormatter.format(originalPrice);
+        
+        priceContainer.style.display = "flex";
+        priceContainer.innerHTML = `
+          <span class="original-price">${formattedOriginal}</span>
+          <span class="current-price">${formattedCurrent}</span>
+        `;
+        // Also show current price in description for consistency
+        description += ` - ${formattedCurrent}`;
+      } else {
+        // Show regular price in description only
+        priceContainer.style.display = "none";
+        description += ` - ${formattedCurrent}`;
+      }
+    }
 
     this.shadowRoot.querySelector("#description").textContent = description;
 
@@ -141,6 +183,7 @@ class GiftItem extends HTMLElement {
       "title",
       "description",
       "price",
+      "originalPrice",
       "image",
       "alt",
       "link",
@@ -158,9 +201,40 @@ class GiftItem extends HTMLElement {
           this.shadowRoot.querySelector("p").textContent = newValue;
           break;
         case "price":
-          this.shadowRoot.querySelector("p").textContent = `${this.getAttribute(
-            "description"
-          )} - ${newValue}`;
+        case "originalPrice":
+          // Rebuild price display when price attributes change
+          const priceContainer = this.shadowRoot.querySelector("#price-container");
+          const origPrice = this.getAttribute("originalPrice");
+          const currPrice = this.getAttribute("price");
+          
+          const priceFormatter = Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+            maximumFractionDigits: 0,
+          });
+          
+          let desc = this.getAttribute("description");
+          
+          if (currPrice) {
+            if (origPrice && parseFloat(origPrice) > parseFloat(currPrice)) {
+              const formattedOriginal = priceFormatter.format(origPrice);
+              const formattedCurrent = priceFormatter.format(currPrice);
+              
+              priceContainer.style.display = "flex";
+              priceContainer.innerHTML = `
+                <span class="original-price">${formattedOriginal}</span>
+                <span class="current-price">${formattedCurrent}</span>
+              `;
+              // Also show current price in description for consistency
+              desc += ` - ${formattedCurrent}`;
+            } else {
+              priceContainer.style.display = "none";
+              const formattedCurrent = priceFormatter.format(currPrice);
+              desc += ` - ${formattedCurrent}`;
+            }
+          }
+          
+          this.shadowRoot.querySelector("#description").textContent = desc;
           break;
         case "image":
           this.shadowRoot.querySelector("img").src = newValue;

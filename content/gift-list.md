@@ -41,49 +41,20 @@ Mostly a place to keep track of things I'm interested in, for when holidays and 
     price="218"
     alt="Linen Princess Dress in Cosmic Floral print"
 ></gift-item>
+<gift-item
+    link="https://www.curlfriendcollective.com/collections/all-scrunchies/products/made-you-blush-silk-scrunchie"
+    linkText="Curlfriend Collective"
+    image="https://www.curlfriendcollective.com/cdn/shop/files/MadeYouBlushMainWebsiteListing_1_1512x.png?v=1724169908"
+    id="curlfriend-silk-scrunchie"
+    title="Silk Scrunchie"
+    description="XL size, open to different colors"
+    price="27"
+    alt="Made You Blush silk scrunchie"
+></gift-item>
 </section>
-<h2>Stuff</h2>
+
+<h2>Bags & Accessories</h2>
 <section class="gift-section">
-    <gift-item
-        link="https://bathingculture.com/collections/towels/products/bathhouse-check-organic-robe?variant=42073572212825"
-        linkText="Bathing Culture"
-        title="Bathhouse Check Organic Robe"
-        image="https://bathingculture.com/cdn/shop/files/BCOR_Oak_P1_770x.webp?v=1737504979"
-        id="bathing-culture-robe"
-        description="size large"
-        price="157"
-        alt="bath robe with a checker pattern"
-    ></gift-item>
-    <gift-item
-        link="https://tomsstudio.com/products/lumos?variant=47370994549011"
-        linkText="Tom's Studio"
-        image="https://tomsstudio.com/cdn/shop/files/lumos-pro-single-lilac.jpg?v=1755285826&width=932"
-        id="lumos"
-        title="Lumos Pro Pen"
-        description="in lilac"
-        price="65"
-        alt="lumos pro pen in lilac"
-    ></gift-item>
-    <gift-item
-        image="https://m.media-amazon.com/images/I/71TwbBDzRHL._AC_SX569_.jpg"
-        link="https://a.co/d/0yg3FtG"
-        linkText="Amazon"
-        id="klipsta"
-        title="Klipsta Flip Bag Hook"
-        description="in silver"
-        price="35"
-        alt="klipsta flip bag hook in silver"
-    ></gift-item>
-    <gift-item
-        link="https://knitpatch.com/collections/shop-all/products/stitchframe"
-        linkText="KnitPatch"
-        image="https://knitpatch.com/cdn/shop/files/KnitePatch_4_-min.png?v=1758742993&width=1000"
-        id="patchmaker-2.0-kit"
-        title="PatchMaker 2.0 Kit"
-        description="Clothing repair kit with PatchMaker tool"
-        price="66"
-        alt="PatchMaker 2.0 Kit for repairing clothes"
-    ></gift-item>
     <gift-item
         link="https://cuyana.com/products/system-tote-13-inch-v2?variant=46713890734395"
         linkText="Cuyana"
@@ -95,26 +66,66 @@ Mostly a place to keep track of things I'm interested in, for when holidays and 
         alt="System Tote 13-inch in black"
     ></gift-item>
     <gift-item
-        link="https://www.curlfriendcollective.com/collections/all-scrunchies/products/made-you-blush-silk-scrunchie"
-        linkText="Curlfriend Collective"
-        image="https://www.curlfriendcollective.com/cdn/shop/files/MadeYouBlushMainWebsiteListing_1_1512x.png?v=1724169908"
-        id="curlfriend-silk-scrunchie"
-        title="Silk Scrunchie"
-        description="XL size, open to different colors"
-        price="27"
-        alt="Made You Blush silk scrunchie"
-    ></gift-item>
-    <gift-item
         link="https://www.gazellebikes.com/en-us/accessories/gazelle-carrier-bag?color=color-black-brown"
         linkText="Gazelle Bikes"
         image="https://cloudinary.pondigital.solutions/pon-digital-solutions/image/upload/q_auto,f_auto/dmp.pon.bike/1280_QArkmkTRfR58EwGZ.png"
         id="gazelle-carrier-bag"
         title="Gazelle Carrier Bag"
         description="in black-brown"
+        price="160"
         alt="Gazelle carrier bag in black-brown"
     ></gift-item>
-
+    <gift-item
+        image="https://m.media-amazon.com/images/I/71TwbBDzRHL._AC_SX569_.jpg"
+        link="https://a.co/d/0yg3FtG"
+        linkText="Amazon"
+        id="klipsta"
+        title="Klipsta Flip Bag Hook"
+        description="in silver"
+        price="35"
+        alt="klipsta flip bag hook in silver"
+    ></gift-item>
 </section>
+
+<h2>Home & Self Care</h2>
+<section class="gift-section">
+    <gift-item
+        link="https://bathingculture.com/collections/towels/products/bathhouse-check-organic-robe?variant=42073572212825"
+        linkText="Bathing Culture"
+        title="Bathhouse Check Organic Robe"
+        image="https://bathingculture.com/cdn/shop/files/BCOR_Oak_P1_770x.webp?v=1737504979"
+        id="bathing-culture-robe"
+        description="size large"
+        price="157"
+        alt="bath robe with a checker pattern"
+    ></gift-item>
+</section>
+
+<h2>Hobbies & Tools</h2>
+<section class="gift-section">
+    <gift-item
+        link="https://tomsstudio.com/products/lumos?variant=47370994549011"
+        linkText="Tom's Studio"
+        image="https://tomsstudio.com/cdn/shop/files/lumos-pro-single-lilac.jpg?v=1755285826&width=932"
+        id="lumos"
+        title="Lumos Pro Pen"
+        description="in lilac"
+        price="75"
+        alt="lumos pro pen in lilac"
+    ></gift-item>
+    <gift-item
+        link="https://knitpatch.com/collections/shop-all/products/stitchframe"
+        linkText="KnitPatch"
+        image="https://knitpatch.com/cdn/shop/files/KnitePatch_4_-min.png?v=1758742993&width=1000"
+        id="patchmaker-2.0-kit"
+        title="PatchMaker 2.0 Kit"
+        description="Clothing repair kit with PatchMaker tool"
+        originalPrice="68"
+        price="41"
+        alt="PatchMaker 2.0 Kit for repairing clothes"
+    ></gift-item>
+</section>
+
 <h2>Games</h2>
 <section class="gift-section">
     <gift-item
@@ -124,8 +135,19 @@ Mostly a place to keep track of things I'm interested in, for when holidays and 
         id="split-fiction"
         title="Split Fiction"
         description="For Nintendo Switch"
-        price="49.99"
+        price="50"
         alt="split fiction cover art"
+    ></gift-item>
+    <gift-item
+        link="https://store.steampowered.com/app/2240620/UNBEATABLE/"
+        linkText="Steam"
+        image="https://kagi.com/proxy/250px-Unbeatable_cover.jpg?c=9cn5Kxse4yD05EJkf6QML9dK4clUbdQ9Oq4d5gDoyHD2lO5eDDvTY1Nok8x6MmFwp7wA2NVGC7Shv0VbXRnfgRrcKP9xh9bpJ97BYdIaPlVScL2Pdo94ehPyPCIwLq-a9goHYhttFW8rys4Z4rGbFA%3D%3D"
+        id="unbeatable"
+        title="UNBEATABLE"
+        description="Steam PC game"
+        originalPrice="28"
+        price="25"
+        alt="UNBEATABLE game cover art"
     ></gift-item>
 </section>
 
