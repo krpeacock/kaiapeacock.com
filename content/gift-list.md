@@ -104,6 +104,15 @@ Mostly a place to keep track of things I'm interested in, for when holidays and 
         price="27"
         alt="Made You Blush silk scrunchie"
     ></gift-item>
+    <gift-item
+        link="https://www.gazellebikes.com/en-us/accessories/gazelle-carrier-bag?color=color-black-brown"
+        linkText="Gazelle Bikes"
+        image="https://cloudinary.pondigital.solutions/pon-digital-solutions/image/upload/q_auto,f_auto/dmp.pon.bike/1280_QArkmkTRfR58EwGZ.png"
+        id="gazelle-carrier-bag"
+        title="Gazelle Carrier Bag"
+        description="in black-brown"
+        alt="Gazelle carrier bag in black-brown"
+    ></gift-item>
 
 </section>
 <h2>Games</h2>
