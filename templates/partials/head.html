@@ -24,6 +24,9 @@
 		<link rel="me" href="https://{{ config.extra.comments.host }}/@{{ config.extra.comments.user }}" />
 	{%- endif %}
 
+	<!-- Webmention endpoint -->
+	<link rel="webmention" href="{{ config.base_url }}/.netlify/functions/webmention" />
+
 	<link rel="icon" type="image/png" href="{{ get_url(path='favicon.png') }}" />
 	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{ get_url(path='apple-touch-icon.png') }}" />
 

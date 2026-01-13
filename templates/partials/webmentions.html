@@ -1,0 +1,77 @@
+{# Example template for displaying webmentions #}
+{# You can include this in your article template #}
+
+{% if page.permalink %}
+<div id="webmentions" class="webmentions">
+  <h3>Webmentions</h3>
+  <div id="webmentions-list" class="webmentions-list">
+    <p>Loading webmentions...</p>
+  </div>
+</div>
+
+<script>
+(async function() {
+  const targetUrl = '{{ config.base_url }}{{ page.permalink }}';
+  const response = await fetch(`/.netlify/functions/webmention?target=${encodeURIComponent(targetUrl)}`);
+  
+  if (response.ok) {
+    const data = await response.json();
+    const container = document.getElementById('webmentions-list');
+    
+    if (data.webmentions && data.webmentions.length > 0) {
+      container.innerHTML = data.webmentions.map(wm => `
+        <div class="webmention">
+          <a href="${wm.source}" target="_blank" rel="noopener noreferrer">
+            ${wm.title || wm.source}
+          </a>
+          ${wm.author ? `<span class="webmention-author">by ${wm.author}</span>` : ''}
+          <time class="webmention-time">${new Date(wm.received).toLocaleDateString()}</time>
+        </div>
+      `).join('');
+    } else {
+      container.innerHTML = '<p>No webmentions yet.</p>';
+    }
+  } else {
+    document.getElementById('webmentions-list').innerHTML = '<p>Unable to load webmentions.</p>';
+  }
+})();
+</script>
+
+<style>
+.webmentions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--primary-color-alpha);
+}
+
+.webmentions h3 {
+  margin-bottom: 1rem;
+}
+
+.webmention {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: var(--primary-color-alpha);
+  border-radius: 4px;
+}
+
+.webmention a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.webmention-author {
+  display: block;
+  font-size: 0.9em;
+  color: var(--primary-color);
+  margin-top: 0.25rem;
+}
+
+.webmention-time {
+  display: block;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 0.25rem;
+}
+</style>
+{% endif %}

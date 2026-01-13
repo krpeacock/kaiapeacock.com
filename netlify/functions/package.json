@@ -1,0 +1,7 @@
+{
+  "name": "webmention-function",
+  "version": "1.0.0",
+  "description": "Netlify function for handling webmentions",
+  "main": "webmention.js",
+  "dependencies": {}
+}
