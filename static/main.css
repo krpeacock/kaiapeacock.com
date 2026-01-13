@@ -222,3 +222,61 @@ footer {
         margin: auto;
     }
 }
+
+/* Webmentions styles */
+webmentions-display {
+    display: block;
+    margin: 2rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--fg-muted-2, #ddd);
+}
+
+.webmentions-container {
+    width: 100%;
+}
+
+.webmentions-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--fg, #333);
+}
+
+.webmentions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.webmention-item {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: var(--fg-muted-1, #f5f5f5);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--primary-color, #007cba);
+}
+
+.webmention-source {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color, #007cba);
+    text-decoration: none;
+    margin-bottom: 0.25rem;
+}
+
+.webmention-source:hover {
+    text-decoration: underline;
+}
+
+.webmention-meta {
+    font-size: 0.875rem;
+    color: var(--fg-muted-4, #666);
+    margin-top: 0.25rem;
+}
+
+.webmention-author {
+    font-style: italic;
+}
+
+.webmention-date {
+    color: var(--fg-muted-4, #666);
+}

@@ -19,5 +19,6 @@
 		{% block content %}{% endblock %}
 	</main>
 	{% include "partials/footer.html" %}
+	<script type="text/javascript" src="{{ get_url(path='webmentions-component.js') | safe }}"></script>
 </body>
 </html>
