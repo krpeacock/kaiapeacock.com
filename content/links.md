@@ -24,10 +24,9 @@ I have FFS coming up soon - sign up to support me and my partner while I recover
 
 [meal train](https://www.mealtrain.com/trains/142my5)
 
-
 ## Socials
 
-- Mastodon - [@kaiapeacock](https://sfba.social/@kaiapeacock)
+- Mastodon - [@kaiapeacock](https://sfba.social/@kaipeacock)
 - Bluesky - [@peacock.dev](https://bsky.app/profile/peacock.dev) (NSFW)
 - Email - [kaia@peacock.dev](mailto:kaia@peacock.dev)
 - Instagram - @kaia_peacock_sf (for now)
