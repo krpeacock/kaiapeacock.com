@@ -10,6 +10,7 @@ tags = [
     "evil",
   ]
 [extra.comments]
+id = 115936261320997288
 +++
 
 For some reason, some woman going by "Erin Friday" has put me on an email list where she's sending me her evil anti-trans agenda and calls to action. So I'm leaking them. If you feel so inclined, please consider submitting testimony against these bills.
