@@ -1,7 +1,6 @@
 +++
 title = "Anti-trans call to action in Long Beach"
 date = 2026-01-26
-transparent = true
 description = "Leaking an email from californiafamily.org"
 [taxonomies]
 tags = [
