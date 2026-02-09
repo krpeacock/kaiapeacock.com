@@ -15,6 +15,10 @@ Another leaked email from Erin Friday (President, Our Duty – USA) to the "CALI
 
 If you’re so inclined, consider submitting testimony **against** these bills at the links below.
 
+These are pretty egregious bills, as you might imagine. They are going to require sending trans women to men's brisons, ban trans women in sports, and do some kind of fuckshit I'm not even aware of in mental health treatment.
+
+I hate this country and these hateful people for attacking the vulnerable.
+
 ## Summary of the email
 
 - **From:** Erin Friday (erin.friday@yahoo.com), President Our Duty – USA  
