@@ -1,0 +1,34 @@
+/*!
+ * Duckquill v4.3.0 (https://duckquill.daudix.one)
+ * Copyright 2024 David "Daudix" Lapshin
+ * Licensed under MIT (https://codeberg.org/daudix/duckquill/src/branch/main/LICENSE)
+ */
+
+@use "../themes/duckquill/sass/normalize";
+
+@use "../themes/duckquill/sass/variables";
+
+@use "../themes/duckquill/sass/alerts";
+@use "../themes/duckquill/sass/article-list";
+@use "../themes/duckquill/sass/article";
+@use "../themes/duckquill/sass/buttons";
+@use "../themes/duckquill/sass/code";
+@use "../themes/duckquill/sass/comments";
+@use "../themes/duckquill/sass/crt";
+@use "../themes/duckquill/sass/external";
+@use "../themes/duckquill/sass/footer";
+@use "../themes/duckquill/sass/footnotes-list";
+@use "../themes/duckquill/sass/general";
+@use "../themes/duckquill/sass/hidden";
+@use "../themes/duckquill/sass/icon";
+@use "../themes/duckquill/sass/input";
+@use "../themes/duckquill/sass/media";
+@use "../themes/duckquill/sass/nav";
+@use "../themes/duckquill/sass/not-found";
+@use "../themes/duckquill/sass/post-nav";
+@use "../themes/duckquill/sass/pre-container";
+@use "../themes/duckquill/sass/statements";
+@use "../themes/duckquill/sass/table";
+@use "tags"; // Use local tags instead of theme's
+@use "../themes/duckquill/sass/typography";
+@use "../themes/duckquill/sass/zola-anchor";
