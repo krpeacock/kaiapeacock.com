@@ -3,6 +3,8 @@ title = "German Citizenship"
 original_date = 2022-07-14
 date = 2022-09-26
 description = "Chronicling my efforts to obtain German Citizenship"
+[taxonomies]
+tags = ["germany", "citizenship", "immigration", "holocaust", "personal", "law"]
 [extra]
 previous = "/blog/naturalization/paula-littauer"
 previous_text = "Aunt Paula's Journal"

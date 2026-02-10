@@ -7,11 +7,10 @@ tags = [
     "air quality",
     "project",
     "Raspberry Pi",
-    "Raspberry Pi Zero",
-    "Raspberry Pi Zero W",
-    "Hardware",
+    "hardware",
     "setup",
     "headers",
+    "IoT"
   ]
 +++
 

@@ -3,6 +3,8 @@ title = "My German Passport"
 date = 2024-07-31
 featuredImage = "/images/20240730_151839.jpg"
 description = "The last steps of German naturalization - getting my passport and my reflections on the experience"
+[taxonomies]
+tags = ["germany", "citizenship", "trans", "gender", "personal", "law"]
 +++
 
 On July 30th, 2024, I received my German passport.

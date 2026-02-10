@@ -8,6 +8,7 @@ tags = [
     "email",
     "technology",
     "personal",
+    "productivity"
   ]
 [extra.comments]
 +++

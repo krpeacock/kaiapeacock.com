@@ -13,6 +13,8 @@ tags = [
     "Arduino",
     "Raspberry Pi",
     "python",
+    "hardware",
+    "IoT"
   ]
 +++
 

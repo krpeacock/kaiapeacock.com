@@ -4,7 +4,7 @@ date = 2020-05-16
 transparent = true
 description = "Some thoughts on San Francisco closing JFK Drive during coronavirus"
 [taxonomies]
-tags = ["bike", "transportation", "JFK Drive", "San Francisco", "quarantine", "coronavirus"]
+tags = ["bike", "transportation", "JFK Drive", "San Francisco", "quarantine", "pandemic"]
 +++
 
 <figure>

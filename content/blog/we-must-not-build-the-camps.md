@@ -11,10 +11,8 @@ tags = [
     "holocaust",
     "lgbt",
     "trans",
-    "Newsom",
-    "Wiener",
-    "Lurie",
-    "California"
+    "California",
+    "San Francisco"
   ]
 [extra.comments]
 id = "113459582558644596"

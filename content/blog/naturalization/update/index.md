@@ -2,6 +2,8 @@
 title = "A German Citizenship Update"
 date = 2024-05-29
 description = "A small update on my journey to German Citizenship"
+[taxonomies]
+tags = ["germany", "citizenship", "immigration", "personal"]
 [extra]
 next = "/blog/naturalization/passport/"
 next_text = "My German Passport"

@@ -8,7 +8,8 @@ tags = [
     "swimming",
     "gender",
     "personal",
-    "election"
+    "election",
+    "San Francisco"
   ]
 [extra.comments]
 id = "113438352006832586"

@@ -5,11 +5,9 @@ description = "Leaking an email from californiafamily.org"
 [taxonomies]
 tags = [
     "trans",
-    "california",
+    "California",
     "erin friday",
-    "Sophia Lorey",
-    "anti-trans",
-    "evil",
+    "anti-trans"
   ]
 [extra.comments]
 id = 115962786836713994

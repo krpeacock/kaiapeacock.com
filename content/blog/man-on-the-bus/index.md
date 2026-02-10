@@ -8,6 +8,7 @@ tags = [
     "trans",
     "gender",
     "personal",
+    "San Francisco"
   ]
 [extra.comments]
 id = "113550255595529117"

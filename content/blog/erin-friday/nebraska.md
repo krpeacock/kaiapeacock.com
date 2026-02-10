@@ -7,7 +7,7 @@ tags = [
     "trans",
     "nebraska",
     "erin friday",
-    "evil",
+    "anti-trans"
   ]
 [extra.comments]
 id = 115936261320997288

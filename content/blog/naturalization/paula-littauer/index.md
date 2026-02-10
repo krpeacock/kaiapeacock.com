@@ -2,6 +2,8 @@
 title = "Paula Littauer's Refugee Story"
 date = 2022-08-25
 description = "Paula, my great aunt once removed, had her story as a refugee from Berlin documented in her diary. Here is an article she published in the NYTimes, about her story."
+[taxonomies]
+tags = ["germany", "holocaust", "refugee", "personal", "immigration"]
 +++
 
 > <h2>

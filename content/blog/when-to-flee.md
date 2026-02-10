@@ -7,7 +7,10 @@ tags = [
     "trans",
     "refugee",
     "gender",
-    "personal"
+    "personal",
+    "politics",
+    "San Francisco",
+    "religion"
   ]
 [extra.comments]
 +++

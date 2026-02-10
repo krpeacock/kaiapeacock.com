@@ -10,7 +10,8 @@ tags = [
     "gender",
     "personal",
     "election",
-    "archimedes banya"
+    "archimedes banya",
+    "San Francisco"
   ]
 [extra.comments]
 id = 114111332810142793

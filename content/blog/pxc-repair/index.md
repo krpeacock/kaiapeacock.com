@@ -12,6 +12,7 @@ tags = [
     "replacement",
     "headphones",
     "audio",
+    "hardware"
   ]
 +++
 

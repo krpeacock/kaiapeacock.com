@@ -7,7 +7,7 @@ tags = [
     "trans",
     "new hampshire",
     "erin friday",
-    "evil",
+    "anti-trans"
 ]
 +++
 
