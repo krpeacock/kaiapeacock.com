@@ -25,4 +25,4 @@ Basically a Linktree or whatever, but I already run a website, so I might as wel
 
 - Github - [krpeacock](https://github.com/krpeacock)
 - Linkedin - [krpeacock](https://www.linkedin.com/in/krpeacock/)
-- Resume - [Synology](https://peacockserver-home.synology.me:5001/d/s/17GMQDmzmLG0nNYjHWSpzOEBpZ9RiS81/cwX7nhQn01FZIoFOoHAgNb6eeCfclO3s-77Ggds0iAw0)
+- Resume - [Synology](https://peacockserver-home.synology.me:5001/d/s/17GVHECfDMTrlrDrfUGpLmYr6PMCXbj2/Gv9QCGVR6DVAyQ9TpvD65uJs-dAnwEFz-S7SgBs8_Aw0)
