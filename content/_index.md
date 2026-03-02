@@ -15,3 +15,5 @@ why you're probably here:
 [about me](/about)
 
 [my blog](/blog)
+
+[find me elsewhere](/links)
