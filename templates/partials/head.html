@@ -83,6 +83,31 @@
 		</noscript>
 	{%- endif %}
 
+	{%- if config.extra.amplitude %}
+		<!-- Amplitude Browser SDK (CDN) -->
+		<script src="https://cdn.amplitude.com/script/{{ config.extra.amplitude.api_key }}.js" defer></script>
+		<script>
+			window.addEventListener('DOMContentLoaded', function () {
+				window.amplitude.init('{{ config.extra.amplitude.api_key }}', {
+					serverUrl: '{{ config.extra.amplitude.server_url }}',
+					autocapture: {
+						attribution: true,
+						pageViews: true,
+						sessions: true,
+						fileDownloads: true,
+						formInteractions: true,
+						elementInteractions: true
+					}
+				});
+				// Sample tracking call: record a page_viewed event with the current path.
+				window.amplitude.track('page_viewed', {
+					path: window.location.pathname,
+					title: document.title
+				});
+			});
+		</script>
+	{%- endif %}
+
 	{%- if config.extra.show_copy_button %}
 		{%- include "partials/copy_button.html" %}
 	{%- endif %}

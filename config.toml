@@ -27,15 +27,14 @@ default_language = "en"
 taxonomies = [{ name = "tags", feed = true }]
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
-highlight_themes_css = [
-    { theme = "solarized-dark", filename = "syntax-theme-dark.css" },
-    { theme = "solarized-light", filename = "syntax-theme-light.css" },
-]
 smart_punctuation = true
 bottom_footnotes = true
 lazy_async_image = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "solarized-light"
+dark_theme = "solarized-dark"
 
 [search]
 index_format = "elasticlunr_json"
@@ -142,3 +141,10 @@ show_qr = true
 # host = "YOUR_SERVER"
 # Your GoatCounter username
 # user = "duckquill"
+
+# Amplitude analytics; enabled only if present in config.
+[extra.amplitude]
+# Your Amplitude project API key (public/frontend key — safe to embed in HTML).
+api_key = "546fb3faa3ed3afeceeb1b904552a4fb"
+# Amplitude ingest server URL.
+server_url = "https://api2.amplitude.com"
