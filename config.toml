@@ -32,6 +32,7 @@ bottom_footnotes = true
 lazy_async_image = true
 
 [markdown.highlighting]
+highlight_code = true
 style = "class"
 light_theme = "solarized-light"
 dark_theme = "solarized-dark"
@@ -144,7 +145,5 @@ show_qr = true
 
 # Amplitude analytics; enabled only if present in config.
 [extra.amplitude]
-# Your Amplitude project API key (public/frontend key — safe to embed in HTML).
 api_key = "546fb3faa3ed3afeceeb1b904552a4fb"
-# Amplitude ingest server URL.
-server_url = "https://api2.amplitude.com/2/httpapi"
+server_url = "/amplitude-api/2/httpapi"

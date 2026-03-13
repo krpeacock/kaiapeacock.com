@@ -11,8 +11,8 @@
 	<title>{% include "partials/title.html" %}</title>
 	<link rel="canonical" href="{{ current_url | default(value='/') | safe }}" />
 
-	{%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
-		{%- if config.markdown.highlight_themes_css | length > 0 %}
+	{%- if config.markdown.highlighting.highlight_code and config.markdown.highlighting.style == "class" %}
+		{%- if config.markdown.highlighting.dark_theme %}
 			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-light.css') }}" media="(prefers-color-scheme: light)" />
 			<link type="text/css" rel="stylesheet" href="{{ get_url(path='syntax-theme-dark.css') }}" media="(prefers-color-scheme: dark)" />
 		{%- else %}
@@ -84,26 +84,17 @@
 	{%- endif %}
 
 	{%- if config.extra.amplitude %}
-		<!-- Amplitude Browser SDK (CDN) -->
-		<script src="https://cdn.amplitude.com/script/{{ config.extra.amplitude.api_key }}.js" defer></script>
-		<script>
-			window.addEventListener('DOMContentLoaded', function () {
-				window.amplitude.init('{{ config.extra.amplitude.api_key }}', {
-					serverUrl: '{{ config.extra.amplitude.server_url }}',
-					autocapture: {
-						attribution: true,
-						pageViews: true,
-						sessions: true,
-						fileDownloads: true,
-						formInteractions: true,
-						elementInteractions: true
-					}
-				});
-				// Sample tracking call: record a page_viewed event with the current path.
-				window.amplitude.track('page_viewed', {
-					path: window.location.pathname,
-					title: document.title
-				});
+		<script type="text/javascript">
+			!function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{r.invoked=!0;var n=t.createElement("script");n.type="text/javascript";n.integrity="sha384-dpidXe7VcqZhSkQ6AMpK2+LbIQn/RFjLopOcgSWl35YFBm/LRMJPuqCTHhC47v0";n.crossOrigin="anonymous";n.async=!0;n.src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz";n.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var s=t.getElementsByTagName("script")[0];s.parentNode.insertBefore(n,s);function v(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}}var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"];for(var c=0;c<a.length;c++){v(o,a[c])}r.Identify=o;var u=function(){this._q=[];return this};var p=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"];for(var l=0;l<p.length;l++){v(u,p[l])}r.Revenue=u;var d=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"];var f=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];function m(e){function t(t,r){e[t]=function(){var n={promise:new Promise((r=>{e._q.push({name:t,args:Array.prototype.slice.call(arguments,0),resolve:r})}))};if(r){n.promise.then(r.bind(e,t))}return n}}for(var r=0;r<d.length;r++){e[d[r]]=function(){return{promise:new Promise((t=>{e._q.push({name:d[r],args:Array.prototype.slice.call(arguments,0),resolve:t})}))}};}t("init");for(var n=0;n<f.length;n++){t(f[n])}}m(r);e.amplitude=r}}(window,document)}();
+
+			amplitude.init('{{ config.extra.amplitude.api_key }}', {
+				serverUrl: '{{ config.extra.amplitude.server_url | default(value="https://api2.amplitude.com/2/httpapi") }}',
+				autocapture: {
+					pageViews: true,
+					sessions: true,
+					formInteractions: true,
+					fileDownloads: true
+				}
 			});
 		</script>
 	{%- endif %}

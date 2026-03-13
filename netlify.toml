@@ -6,7 +6,7 @@ command = "zola build"
 
 [build.environment]
 # Set the version name that you want to use and Netlify will automatically use it.
-ZOLA_VERSION = "0.19.2"
+ZOLA_VERSION = "0.22.1"
 
 # The magic for deploying previews of branches.
 # We need to override the base url with whatever url Netlify assigns to our
@@ -15,3 +15,19 @@ ZOLA_VERSION = "0.19.2"
 
 [context.deploy-preview]
 command = "zola build --base-url $DEPLOY_PRIME_URL"
+
+# Proxy Amplitude event ingestion through this domain.
+# Proxying avoids CORS issues and bypasses ad-blocker rules targeting amplitude.com.
+# Docs: https://amplitude.com/docs/analytics/domain-proxy
+[[redirects]]
+  from = "/amplitude-api/*"
+  to = "https://api2.amplitude.com/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/amplitude-api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type"
