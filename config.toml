@@ -147,4 +147,4 @@ show_qr = true
 # Your Amplitude project API key (public/frontend key — safe to embed in HTML).
 api_key = "546fb3faa3ed3afeceeb1b904552a4fb"
 # Amplitude ingest server URL.
-server_url = "https://api2.amplitude.com"
+server_url = "https://api2.amplitude.com/2/httpapi"
