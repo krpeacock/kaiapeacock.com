@@ -143,7 +143,6 @@ show_qr = true
 # Your GoatCounter username
 # user = "duckquill"
 
-# Amplitude analytics; enabled only if present in config.
+# Amplitude analytics
 [extra.amplitude]
 api_key = "546fb3faa3ed3afeceeb1b904552a4fb"
-server_url = "/amplitude-api/2/httpapi"

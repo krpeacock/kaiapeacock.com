@@ -10,7 +10,7 @@ tags = [
     "personal",
   ]
 [extra.comments]
-
+id = "116245498566861675"
 +++
 
 Less than a year after instrumenting their categorical ban on trans women competing, US Masters Swimming (USMS) is deciding to comply with state laws. This is a win for women in sports, and the first reversal we are seeing in the Trump era of transmisogyny. First I'll go over the timeline, then my own experiences as a transgender swimmer in the past year, and then I'll briefly speculate on the implications of what I believe democratic politicians should take away from this news.

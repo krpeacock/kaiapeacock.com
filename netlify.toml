@@ -16,9 +16,6 @@ ZOLA_VERSION = "0.22.1"
 [context.deploy-preview]
 command = "zola build --base-url $DEPLOY_PRIME_URL"
 
-# Proxy Amplitude event ingestion through this domain.
-# Proxying avoids CORS issues and bypasses ad-blocker rules targeting amplitude.com.
-# Docs: https://amplitude.com/docs/analytics/domain-proxy
 [[redirects]]
   from = "/amplitude-api/*"
   to = "https://api2.amplitude.com/:splat"
