@@ -15,16 +15,3 @@ ZOLA_VERSION = "0.22.1"
 
 [context.deploy-preview]
 command = "zola build --base-url $DEPLOY_PRIME_URL"
-
-[[redirects]]
-  from = "/amplitude-api/*"
-  to = "https://api2.amplitude.com/:splat"
-  status = 200
-  force = true
-
-[[headers]]
-  for = "/amplitude-api/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
-    Access-Control-Allow-Headers = "Content-Type"

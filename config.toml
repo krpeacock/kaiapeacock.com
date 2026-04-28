@@ -142,7 +142,3 @@ show_qr = true
 # host = "YOUR_SERVER"
 # Your GoatCounter username
 # user = "duckquill"
-
-# Amplitude analytics
-[extra.amplitude]
-api_key = "546fb3faa3ed3afeceeb1b904552a4fb"
